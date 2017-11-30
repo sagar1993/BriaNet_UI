@@ -2,49 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Born_2_Code\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_07f9165ec35112e8b58bacaaac8b34100a90b6b4\classes.dex" />
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_07f9165ec35112e8b58bacaaac8b34100a90b6b4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\f0b392f3e45a51252868975df340a2dd40bdf2e9\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\7c756acc06a22fade57cf336a9cd5b51699bd8fc\output\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ae76937e6d599fcac61aabc52f6f72e48f0dd5fe\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\d7eeb5ab7ba8cad5d28f39a0cef9f75b681d2e51\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_258899fd264ef5f4f1e65a2dd4dc3ccc2f5d2c62\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\9c23dc53334c9f1313a3cc06495b170ac65ddfd8\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6b9c930d0e1e8ef3ead2703796a44e02fabe50d4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\7c756acc06a22fade57cf336a9cd5b51699bd8fc\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_02f0a0144821b976e712c08d8d42b4a89701b536\classes.dex" />
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_50a355099af43b3ae9b7b3d6c2628754dcbcd217.jar" />
     </item>
     <item
         is-multidex="true"
@@ -52,62 +25,62 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="418dd20ee585bc7f86ef57ea89bfdb065e164b82">
+        sha1="272f514077e991dcd42baaa0c4ba6aaa122d782e">
         <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bd6bfa2998341b85e42899eac2df1127135562b9\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\c0be2db0fa7dcc7339eb57d417e9434c6cdc4294\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\d7eeb5ab7ba8cad5d28f39a0cef9f75b681d2e51\output\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_30fdf57c0033bebfa7ded5671932e34e5218241f\classes.dex" />
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_258899fd264ef5f4f1e65a2dd4dc3ccc2f5d2c62.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Born_2_Code\.android\build-cache\d7eeb5ab7ba8cad5d28f39a0cef9f75b681d2e51\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f1bedb5e71d6ae91024a9460596bfdbe1f979f20\classes.dex" />
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_f1bedb5e71d6ae91024a9460596bfdbe1f979f20.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\8ba76e6675216b0724fe6670f89b0670b3ec2a94\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\7c756acc06a22fade57cf336a9cd5b51699bd8fc\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4dc88277d4aeb60f024fbbe34271d511e7fe5eb7\classes.dex" />
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_02f0a0144821b976e712c08d8d42b4a89701b536.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\9dbe3b42906a474b7aec5e8f626351e1fa946ef2\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3648f44cc0d10138a26b6c79b98ce81386e4265b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\87655d619b622386bd59d1873fa21893d2ab6df0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_868036d42df20273c111677711cb19c306bfca24\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Born_2_Code\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-7.0.1_3a751e2879a6c41577a62790066098961bccc4f4\classes.dex" />
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_3a751e2879a6c41577a62790066098961bccc4f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\f0b392f3e45a51252868975df340a2dd40bdf2e9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_ae76937e6d599fcac61aabc52f6f72e48f0dd5fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\8ba76e6675216b0724fe6670f89b0670b3ec2a94\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_4dc88277d4aeb60f024fbbe34271d511e7fe5eb7.jar" />
     </item>
     <item
         is-multidex="true"
@@ -119,76 +92,112 @@
         <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_62f2ddd4a2a9f997b02a54be5cb1c8d2d953e25f\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\26364fcf8eee5e1bc6d752fdbcbd4acc30c45f00\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\9dbe3b42906a474b7aec5e8f626351e1fa946ef2\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a05a4b7e3e19adf715851cdb2a876ebd7965cbb0\classes.dex" />
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_3648f44cc0d10138a26b6c79b98ce81386e4265b.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\f0b392f3e45a51252868975df340a2dd40bdf2e9\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\87655d619b622386bd59d1873fa21893d2ab6df0\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_1b237acb9f52cb540727ad6af00f32d8b3583822\classes.dex" />
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_868036d42df20273c111677711cb19c306bfca24.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\ebc74497f4d2aa45484c162520932eeb89b5cd74\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7d40ea718183b2005c4a8ea99dcea32c3b70475c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\9dbe3b42906a474b7aec5e8f626351e1fa946ef2\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_8b0dc5f829872423d5627ae227853bd14bac3ca0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Born_2_Code\.android\build-cache\1db9fd0f76b948085bbedea21e6f960d1436f96c\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d75e3ece4c34bb085186c92ff897344ccc77bbf8\classes.dex" />
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_d75e3ece4c34bb085186c92ff897344ccc77bbf8.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\26364fcf8eee5e1bc6d752fdbcbd4acc30c45f00\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_a05a4b7e3e19adf715851cdb2a876ebd7965cbb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Born_2_Code\.android\build-cache\f14e4039be46b6dca4c6ba8b55297b42beb250c0\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_89e9abbde1ace700beb6f74f2c3f3f917b97c9e6\classes.dex" />
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_89e9abbde1ace700beb6f74f2c3f3f917b97c9e6.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\f0b392f3e45a51252868975df340a2dd40bdf2e9\output\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_1b237acb9f52cb540727ad6af00f32d8b3583822.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\ebc74497f4d2aa45484c162520932eeb89b5cd74\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_7d40ea718183b2005c4a8ea99dcea32c3b70475c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\06ac37890f8906225a815467f377296ccd7485ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_84f6d1d9b2f535381d7ede424dfd7fd8ea72ef1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\9dbe3b42906a474b7aec5e8f626351e1fa946ef2\output\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_8b0dc5f829872423d5627ae227853bd14bac3ca0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\c0be2db0fa7dcc7339eb57d417e9434c6cdc4294\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_30fdf57c0033bebfa7ded5671932e34e5218241f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Born_2_Code\.android\build-cache\9c23dc53334c9f1313a3cc06495b170ac65ddfd8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\classes_6b9c930d0e1e8ef3ead2703796a44e02fabe50d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Born_2_Code\.android\build-cache\ebc74497f4d2aa45484c162520932eeb89b5cd74\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_14db02aa909238b05574d1db67ec468e24da9433\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Born_2_Code\.android\build-cache\7c756acc06a22fade57cf336a9cd5b51699bd8fc\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_50a355099af43b3ae9b7b3d6c2628754dcbcd217\classes.dex" />
+        <dex dex="C:\Users\Born_2_Code\Documents\mc\BrainNet1\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_14db02aa909238b05574d1db67ec468e24da9433.jar" />
     </item>
 
 </items>

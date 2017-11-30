@@ -1,7 +1,16 @@
 package com.example.born_2_code.brainnet1;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.IntentFilter;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
@@ -18,18 +27,69 @@ import butterknife.Bind;
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
+    /*DBHelper mydb;*/
+    IntentFilter filter = null;
+    static boolean isRegistered = false;
+    private final String OK = "1";
+    static boolean fileSelected = false;
+    Uri fileUri = null;
+    private ProgressDialog progressDialog;
+    private String email = "";
 
     @Bind(R.id.input_email) EditText _emailText;
     @Bind(R.id.input_password) EditText _passwordText;
     @Bind(R.id.btn_login) Button _loginButton;
+    @Bind(R.id.select_file) Button _selectButton;
     @Bind(R.id.link_signup) TextView _signupLink;
-    
+    @Bind(R.id.file_uri) TextView _fileUri;
+
+
+
+
+    BroadcastReceiver receiver = new BroadcastReceiver() {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Bundle bundle = intent.getExtras();
+            if (bundle != null) {
+                String resultCode = bundle.getString("login");
+                progressDialog.hide();
+
+                if (resultCode.equals(OK)){
+                    Toast.makeText(getApplicationContext(), "Login Success." , Toast.LENGTH_LONG).show();
+                    Intent i=new Intent(context,LoginActivity.class);
+                    i.putExtra("name", email);
+                    context.startActivity(i);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Login Failed." , Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }
+    };
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        
+
+        progressDialog = new ProgressDialog(LoginActivity.this, R.style.AppTheme_Dark_Dialog);
+        filter = new IntentFilter("com.example.born_2_code.brainnet1");
+
+
+
+        _selectButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mediaIntent = new Intent(Intent.ACTION_GET_CONTENT);
+                mediaIntent.setType("text/*");
+                startActivityForResult(mediaIntent,1);
+            }
+        });
+
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -42,63 +102,77 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // Start the Signup activity
                 Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
                 startActivityForResult(intent, REQUEST_SIGNUP);
-                finish();
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
         });
     }
 
     public void login() {
-        Log.d(TAG, "Login");
 
-        if (!validate()) {
+        /*if (!validate()) {
             onLoginFailed();
             return;
-        }
+        }*/
 
-        _loginButton.setEnabled(false);
-
-        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
+        progressDialog = new ProgressDialog(LoginActivity.this,
                 R.style.AppTheme_Dark_Dialog);
         progressDialog.setIndeterminate(true);
         progressDialog.setMessage("Authenticating...");
         progressDialog.show();
 
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
-
         // TODO: Implement your own authentication logic here.
 
-        new android.os.Handler().postDelayed(
-                new Runnable() {
-                    public void run() {
-                        // On complete call either onLoginSuccess or onLoginFailed
-                        onLoginSuccess();
-                        // onLoginFailed();
-                        progressDialog.dismiss();
-                    }
-                }, 3000);
+
+        email = _emailText.getText().toString();
+
+        try {
+
+            /*mydb.insertContact("abcd", "123456", signal);
+            Cursor cursor = mydb.getData("abcd", "123456");
+
+
+            Log.i("length", ""+cursor.getCount());
+            while (cursor.moveToNext()){
+                String data = cursor.getString(cursor.getColumnIndex("brainsignal"));
+                Log.i("length",data);
+            }*/
+
+
+            Intent intent = new Intent(this, IntentServiceConnectFog.class);
+            intent.putExtra(IntentServiceConnectFog.URL,
+                    "http://192.168.0.7:8000/service/test/");
+            intent.putExtra(IntentServiceConnectFog.EMAIL,
+                    email);
+            intent.putExtra(IntentServiceConnectFog.FILEURI,
+                    fileUri);
+            startService(intent);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_SIGNUP) {
+        Log.i("uri ", "1");
             if (resultCode == RESULT_OK) {
+                Log.i("uri ", "2");
+                if(requestCode == 1){
+                    fileUri = data.getData();
+                    _fileUri.setText("Brain Signal file: " + fileUri);
+                    fileSelected = true;
+                }
+                if(requestCode == REQUEST_SIGNUP){
 
-                // TODO: Implement successful signup logic here
-                // By default we just finish the Activity and log them in automatically
-                this.finish();
+                }
             }
-        }
     }
 
     @Override
     public void onBackPressed() {
-        // Disable going back to the MainActivity
         moveTaskToBack(true);
     }
 
@@ -109,7 +183,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginFailed() {
         Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
-
         _loginButton.setEnabled(true);
     }
 
@@ -133,6 +206,25 @@ public class LoginActivity extends AppCompatActivity {
             _passwordText.setError(null);
         }
 
+        /*if(!fileSelected) {
+            valid = false;
+        }*/
+
         return valid;
+    }
+    protected void onResume() {
+        if (!isRegistered) {
+            this.registerReceiver(receiver, filter);
+            isRegistered = true;
+        }
+        super.onResume();
+    }
+
+    protected void onPause() {
+        if (isRegistered) {
+            unregisterReceiver(receiver);
+            isRegistered = false;
+        }
+        super.onPause();
     }
 }
