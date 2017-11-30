@@ -61,11 +61,16 @@ public class IntentServiceSignOn extends IntentService {
         password = workIntent.getStringExtra(PASSWORD);
 
         if(httpSendLoginDataToServer(email, signal)){
-            // insert data to db
-            // send broadcast - data addded successfully
+            Intent broadcast = new Intent();
+            broadcast.setAction("com.example.born_2_code.brainnet1");
+            broadcast.putExtra("login", "2");
+            sendBroadcast(broadcast);
         }
         else{
-            // send broadcast - can not add data successfully
+            Intent broadcast = new Intent();
+            broadcast.setAction("com.example.born_2_code.brainnet1");
+            broadcast.putExtra("login", "2");
+            sendBroadcast(broadcast);
         }
     }
 
