@@ -196,7 +196,7 @@ public class IntentServiceConnectFog extends IntentService {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            return serverResponseCode;
+            return 1;
 
         } // End else block
         return 0;
