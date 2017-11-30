@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.born_2_code.brainnet1.LoginActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="com.example.born_2_code.brainnet1.WelcomeActivity" android:theme="@style/AppTheme.Dark" />
         <activity android:name="com.example.born_2_code.brainnet1.SignupActivity" android:theme="@style/AppTheme.Dark" />
         <service android:name="com.example.born_2_code.brainnet1.IntentServiceConnectFog" ></service>
         <service android:name="com.example.born_2_code.brainnet1.IntentServiceSignOn" ></service>
