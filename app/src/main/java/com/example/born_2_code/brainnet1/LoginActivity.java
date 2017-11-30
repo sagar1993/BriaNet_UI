@@ -54,12 +54,14 @@ public class LoginActivity extends AppCompatActivity {
             if (bundle != null) {
                 String resultCode = bundle.getString("login");
                 progressDialog.hide();
+                Log.i("result Code", resultCode);
+
 
                 if (resultCode.equals(OK)){
                     Toast.makeText(getApplicationContext(), "Login Success." , Toast.LENGTH_LONG).show();
-                    Intent i=new Intent(context,LoginActivity.class);
+                    Intent i=new Intent(getApplicationContext(), WelcomeActivity.class);
                     i.putExtra("name", email);
-                    context.startActivity(i);
+                    startActivity(i);
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "Login Failed." , Toast.LENGTH_LONG).show();
